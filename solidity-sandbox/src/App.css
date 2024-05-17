@@ -1,0 +1,135 @@
+/* App.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header-title {
+  margin: 0;
+  font-size: 24px;
+}
+
+.main-container {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.footer {
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* ProjectStructureSidebar styles */
+.project-sidebar {
+  flex: 0 0 250px;
+  background-color: #272822;
+  color: #fff;
+  padding: 20px;
+  /* margin-right: -20px; */
+}
+
+.project-sidebar h2 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #f92672;
+}
+
+.project-sidebar button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #66d9ef;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.project-sidebar button:hover {
+  background-color: #4fc1e9;
+}
+
+/* CodeEditor styles */
+.code-editor {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.code-editor h2 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #f92672;
+}
+
+.code-editor textarea {
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: black;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.error {
+  color: red;
+}
+
+.output {
+  color: green;
+}
+
+/* OutputPanel styles */
+.output-panel {
+  flex: 0 0 250px;
+  background-color: #272822;
+  color: #fff;
+  padding: 20px;
+}
+
+.output-panel h2 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #f92672;
+}
+
+.output-panel p {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .project-sidebar,
+  .output-panel {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .code-editor {
+    flex: 1;
+  }
+}
